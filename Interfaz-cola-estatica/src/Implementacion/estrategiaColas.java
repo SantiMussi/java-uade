@@ -33,4 +33,13 @@ public class estrategiaColas implements ColaTDA {
     public int primero() {
         return cola[indice-1];
     }
+    
+    public int getInx() {
+        return indice;
+    }
+
+    // Métodos para mantener el encapsulamiento y acceder a metodos de la cola
+    public int[] elementos() {
+        return java.util.Arrays.copyOf(cola, indice);
+    }
 }
